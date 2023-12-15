@@ -5,17 +5,18 @@ html {
 }
 header {
   position: fixed;
-  margin-top: -100px;
+  top: 0;
   background-color: white;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   width: 100%;
 }
 h1 {
-  margin-top: 100px;
+  padding-top: 50px;
   text-align: center;
 }
 h2 {
+  padding-top: 2rem;
   text-align: center;
 }
 p {
@@ -23,4 +24,5 @@ p {
 }
 .topnav {
   font-size: 20px;
+  padding: 0 17px;
 }
