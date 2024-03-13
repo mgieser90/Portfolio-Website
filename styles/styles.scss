@@ -28,10 +28,35 @@
   h1 {
     font-size: 50px;
   }
+
+  p {
+    margin-top: 40px;
+    color: rgb(227, 227, 226);
+  }
 }
 
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.arm {
+  animation: wave 2s infinite;
+  transform-origin: 100px 90px;
+  /* Set the origin point for the arm rotation */
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(60deg);
+  }
+
+  50% {
+    transform: rotate(90deg);
+  }
+
+  100% {
+    transform: rotate(60deg);
+  }
 }
