@@ -1,0 +1,36 @@
+* {
+  font-family: "Ubuntu Mono", monospace;
+  color: white;
+}
+
+.bg {
+  margin: 0;
+  background: #406fe6;
+  width: 100%;
+  height: 100%;
+}
+
+#sticky-header {
+  background: rgb(97, 130, 186);
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+}
+
+#greeting {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  justify-content: center;
+  text-align: center;
+}
+#greeting h1 {
+  font-size: 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}/*# sourceMappingURL=styles.css.map */
