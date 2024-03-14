@@ -3,6 +3,27 @@
   color: white;
 }
 
+h1 {
+  font-size: 50px;
+}
+
+p {
+  color: rgb(227, 227, 226);
+}
+
+span.red {
+  color: rgb(121, 0, 0);
+}
+
+span.green {
+  color: rgb(0, 63, 0);
+}
+
+span.black {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .bg {
   margin: 0;
   background: #406fe6;
@@ -11,11 +32,23 @@
 }
 
 #sticky-header {
+  display: flex;
+  justify-content: space-between;
   background: rgb(97, 130, 186);
   position: fixed;
   width: 100%;
   height: 60px;
   top: 0;
+}
+#sticky-header #mobile-nav-menu, #sticky-header #home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+}
+#sticky-header i {
+  font-size: 35px;
 }
 
 #greeting {
@@ -25,12 +58,24 @@
   justify-content: center;
   text-align: center;
 }
-#greeting h1 {
-  font-size: 50px;
-}
 #greeting p {
   margin-top: 40px;
-  color: rgb(227, 227, 226);
+}
+
+#empty-div {
+  width: 100%;
+  height: 400px;
+}
+
+#about-me {
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#about-me p {
+  text-align: start;
 }
 
 main {
