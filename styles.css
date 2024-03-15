@@ -1,6 +1,6 @@
 * {
   font-family: "Ubuntu Mono", monospace;
-  color: rgb(54, 53, 53);
+  color: #2c2c2c;
 }
 
 h1 {
@@ -12,11 +12,11 @@ p {
 }
 
 span.red {
-  color: #950e0e;
+  color: #d30202;
 }
 
 span.green {
-  color: rgb(3, 97, 3);
+  color: #005e00;
 }
 
 span.black {
@@ -24,9 +24,13 @@ span.black {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+span.orange {
+  color: #a35d00;
+}
+
 .bg {
   margin: 0;
-  background: #0eb1f7;
+  background: #009CE1;
   width: 100%;
   height: 100%;
 }
@@ -34,13 +38,17 @@ span.black {
 #sticky-header {
   display: flex;
   justify-content: space-between;
-  background: #6bcbf7ea;
+  background: rgba(137, 207, 240, 0.9450980392);
   position: fixed;
   width: 100%;
   height: 60px;
   top: 0;
+  background-image: linear-gradient(to bottom, rgba(137, 207, 240, 0.95), transparent);
+  -webkit-mask-image: linear-gradient(to bottom, white, transparent);
+  mask-image: linear-gradient(to bottom, white, transparent);
 }
-#sticky-header #mobile-nav-menu, #sticky-header #home {
+#sticky-header #mobile-nav-menu,
+#sticky-header #home {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,6 +57,7 @@ span.black {
 }
 #sticky-header i {
   font-size: 35px;
+  opacity: 0.8;
 }
 
 #greeting {
