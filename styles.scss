@@ -53,7 +53,7 @@ span.orange {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(82, 151, 204, 0.858);
+  background-color: rgba(82, 151, 204, 0.851);
   z-index: -1;
 }
 
@@ -69,7 +69,7 @@ span.orange {
   -webkit-mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.682), transparent);
   mask-image: linear-gradient(to bottom, rgb(255, 255, 255), transparent);
 
-  #mobile-nav-menu,
+  #menu-button,
   #home {
     display: flex;
     align-items: center;
@@ -81,6 +81,54 @@ span.orange {
   i {
     font-size: 35px;
     opacity: .8;
+  }
+}
+
+#mobile-nav-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #2c2c2cef;
+  z-index: 100;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.2s ease, transform 0.1s ease-in-out;
+
+  #nav-area {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.808);
+    margin: 0 40px;
+    height: auto;
+    width: 100%;
+
+    #close {
+      align-self: end;
+      margin: 20px 20px 0;
+      font-size: 30px;
+    }
+
+    #close:hover {
+      color: #d30202;
+    }
+  }
+
+  #selections {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 50px;
+
+    .nav-button {
+      margin-top: 20px;
+      font-size: 2rem;
+      text-decoration: none;
+      padding: 30px 0;
+    }
   }
 }
 
