@@ -28,18 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
           mobileNavBackground.style.transform = "scale(1)"; // Revert back to normal scale
         }, 200); // Duration of pop effect
       }, 10); // Delay to ensure transition starts properly
-    } else {
-      mobileNavBackground.style.transform = "scale(1.2)"; // Slightly larger scale for pop-out effect
-      setTimeout(function () {
-        mobileNavBackground.style.transform = "scale(1.5)"; // Larger scale for pop-out effect
-        setTimeout(function () {
-          mobileNavBackground.style.transform = "scale(0)"; // Disappear effect
-          setTimeout(function () {
-            mobileNavBackground.style.display = "none";
-          }, 200); // Duration of pop-out effect
-        }, 100); // Duration before scaling down to 0
-      }, 10); // Delay to ensure transition starts properly
-    }
+    } 
   });
 
   document.body.addEventListener("click", function (event) {
