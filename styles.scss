@@ -5,10 +5,12 @@
 
 h1 {
   font-size: 50px;
+  filter: drop-shadow(3px 2px 2px #00000048);
 }
 
 p {
   color: #e3e3e2;
+  filter: drop-shadow(3px 2px 2px #00000048);
 }
 
 span.red {
@@ -26,6 +28,10 @@ span.black {
 
 span.orange {
   color: #a35d00;
+}
+
+img {
+  filter: drop-shadow(5px 5px 2px #000000);
 }
 
 .bg {
@@ -144,6 +150,10 @@ span.orange {
   }
 }
 
+#stick-guy {
+  filter: drop-shadow(3px 2px 2px #00000048);
+}
+
 #empty-div {
   width: 100%;
   height: 400px;
@@ -169,6 +179,12 @@ span.orange {
   }
 }
 
+// .project {
+//   background-color: #e3e3e27c;
+//   border-radius: 2px;
+
+// }
+
 #contact-me p {
   text-align: center;
 }
@@ -187,6 +203,7 @@ span.orange {
   margin: 50px 0;
   display: flex;
   justify-content: space-between;
+  filter: drop-shadow(3px 2px 2px #00000048);
 
   i {
     font-size: 50px;
