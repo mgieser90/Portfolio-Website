@@ -188,7 +188,7 @@ img {
 }
 
 #contact-links {
-  margin: 50px 0;
+  margin: 50px 0 80px;
   display: flex;
   justify-content: space-between;
   filter: drop-shadow(3px 2px 2px rgba(0, 0, 0, 0.2823529412));
@@ -218,5 +218,35 @@ main {
   }
   100% {
     transform: rotate(60deg);
+  }
+}
+@media screen and (min-width: 650px) {
+  h1 {
+    font-size: 60px;
+  }
+  p {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  #stick-guy svg {
+    width: 300px;
+    height: 300px;
+  }
+  #about-me,
+  #projects,
+  #contact-me {
+    margin: 0 80px;
+  }
+  #contact-links {
+    margin: 50px 60px 100px;
+  }
+  #mobile-nav-background #nav-area {
+    margin: 0 60px;
+  }
+  #mobile-nav-background #nav-area .nav-button {
+    font-size: 50px;
+    margin: 30px 60px;
   }
 }/*# sourceMappingURL=styles.css.map */
