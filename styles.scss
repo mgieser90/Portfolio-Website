@@ -63,7 +63,46 @@ img {
   z-index: -1;
 }
 
-#sticky-header {
+#lg-screen-fixed-nav {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  align-items: flex-start;
+  width: auto;
+  height: 100vh;
+  right: 0;
+  margin: 0;
+  z-index: 100;
+  font-size: 25px;
+
+  #slide-out {
+    display: inline-flex;
+  }
+
+  #slide-in {
+    display: none;
+  }
+
+  .lg-nav-button {
+    a {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+
+      i {
+        margin: 30px 20px;
+      }
+
+      p {
+        display: none;
+        margin: 0;
+      }
+    }
+  }
+}
+
+#fixed-header {
   display: flex;
   justify-content: space-between;
   background: #89cff0f1;
@@ -169,7 +208,8 @@ img {
 
 #about-me,
 #projects,
-#contact-me {
+#contact-me,
+#top h1 {
   margin: 0 30px;
   display: flex;
   flex-direction: column;
@@ -267,5 +307,42 @@ main {
       font-size: 50px;
       margin: 30px 60px;
     }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #projects {
+    flex-direction: row;
+    align-items: flex-end;
+
+    #bc {
+      margin: 0 20px 0 0;
+      width: 50%;
+    }
+
+    #wcr {
+      margin: 0 0 0 20px;
+      width: 50%;
+    }
+  }
+
+  #top h1 {
+    margin-bottom: 100px;
+  }
+
+  #about-me p {
+    margin: 30px 150px;
+  }
+
+  #contact-links {
+    margin: 50px 400px 100px;
+  }
+
+  #fixed-header {
+    display: none;
+  }
+
+  #lg-screen-fixed-nav {
+    display: flex;
   }
 }

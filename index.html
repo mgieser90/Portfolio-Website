@@ -20,7 +20,7 @@
 <body class="bg">
 
   <header>
-    <nav id="sticky-header">
+    <nav id="fixed-header">
       <div id="home">
         <a href="#top">
           <i class="fa-solid fa-angles-up"></i>
@@ -42,6 +42,40 @@
         <a href="#projects" class="nav-button">Projects</a>
         <a href="#contact-me" class="nav-button">Contact Me</a>
       </div>
+    </div>
+  </nav>
+  <nav id="lg-screen-fixed-nav">
+    <div class="lg-nav-button" id="slide-out">
+      <a href="">
+        <i class="fa-solid fa-angles-left"></i> </a>
+    </div>
+    <div class="lg-nav-button" id="slide-in">
+      <a href="">
+        <i class="fa-solid fa-angles-right"></i> </a>
+    </div>
+    <div class="lg-nav-button" id="side-nav-home">
+      <a href="#top">
+        <i class="fa-solid fa-angles-up"></i>
+        <p>Home</p>
+      </a>
+    </div>
+    <div class="lg-nav-button" id="side-nav-about-me">
+      <a href="#about-me">
+        <i class="fa-regular fa-address-card"></i>
+        <p>About Me</p>
+      </a>
+    </div>
+    <div class="lg-nav-button" id="side-nave-projects">
+      <a href="#projects">
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+        <p>Projects</p>
+      </a>
+    </div>
+    <div class="lg-nav-button" id="side-nav-contact-me">
+      <a href="#contact-me">
+        <i class="fa-solid fa-envelope"></i>
+        <p>Contact Me</p>
+      </a>
     </div>
   </nav>
   <!-- Planned update:(initial load in "day" mode) When the user taps/clicks the "day/night" switch on the left side, have the stick guy walk to it and flip the switch down to "night"
@@ -102,9 +136,9 @@
       </h4>
     </div>
     <div id="empty-div"></div>
+    <h1>Projects</h1>
     <div id="projects">
-      <div class="project">
-        <h1>Projects</h1>
+      <div class="project" id="bc">
         <a href="https://mgieser90.github.io/Basic-Calculator/">
           <img src="Basic Calculator.png" alt="Basic Calculator">
         </a>
@@ -114,9 +148,9 @@
           the new concepts I was learning to complete the functions of the buttons. Throughout the process I honed in my
           problem solving skills by learning how to break up the bigger parts of the logic into smaller pieces.
         </p>
+        <div id="empty-div2"></div>
       </div>
-      <div id="empty-div2"></div>
-      <div class="project">
+      <div class="project" id="wcr">
         <a href="https://mgieser90.github.io/2Barrels-clone/">
           <img src="Website Clone_Resume.png" alt="Website clone/resume">
         </a>
@@ -129,8 +163,8 @@
           wanted
           to make something for them that expressed how much I desired to work there.
         </p>
+        <div id="empty-div2"></div>
       </div>
-      <div id="empty-div2"></div>
     </div>
     <div id="contact-me">
       <h1>Contact Me</h1>

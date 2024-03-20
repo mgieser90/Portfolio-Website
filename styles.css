@@ -63,7 +63,39 @@ img {
   z-index: -1;
 }
 
-#sticky-header {
+#lg-screen-fixed-nav {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  align-items: flex-start;
+  width: auto;
+  height: 100vh;
+  right: 0;
+  margin: 0;
+  z-index: 100;
+  font-size: 25px;
+}
+#lg-screen-fixed-nav #slide-out {
+  display: inline-flex;
+}
+#lg-screen-fixed-nav #slide-in {
+  display: none;
+}
+#lg-screen-fixed-nav .lg-nav-button a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+#lg-screen-fixed-nav .lg-nav-button a i {
+  margin: 30px 20px;
+}
+#lg-screen-fixed-nav .lg-nav-button a p {
+  display: none;
+  margin: 0;
+}
+
+#fixed-header {
   display: flex;
   justify-content: space-between;
   background: rgba(137, 207, 240, 0.9450980392);
@@ -76,15 +108,15 @@ img {
   mask-image: linear-gradient(to bottom, rgb(255, 255, 255), transparent);
   z-index: 50;
 }
-#sticky-header #menu-button,
-#sticky-header #home {
+#fixed-header #menu-button,
+#fixed-header #home {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 60px;
   width: 60px;
 }
-#sticky-header i {
+#fixed-header i {
   font-size: 35px;
   opacity: 0.8;
 }
@@ -160,7 +192,8 @@ img {
 
 #about-me,
 #projects,
-#contact-me {
+#contact-me,
+#top h1 {
   margin: 0 30px;
   display: flex;
   flex-direction: column;
@@ -169,7 +202,8 @@ img {
 }
 #about-me p,
 #projects p,
-#contact-me p {
+#contact-me p,
+#top h1 p {
   text-align: start;
 }
 
@@ -248,5 +282,34 @@ main {
   #mobile-nav-background #nav-area .nav-button {
     font-size: 50px;
     margin: 30px 60px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #projects {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  #projects #bc {
+    margin: 0 20px 0 0;
+    width: 50%;
+  }
+  #projects #wcr {
+    margin: 0 0 0 20px;
+    width: 50%;
+  }
+  #top h1 {
+    margin-bottom: 100px;
+  }
+  #about-me p {
+    margin: 30px 150px;
+  }
+  #contact-links {
+    margin: 50px 400px 100px;
+  }
+  #fixed-header {
+    display: none;
+  }
+  #lg-screen-fixed-nav {
+    display: flex;
   }
 }/*# sourceMappingURL=styles.css.map */
