@@ -9,6 +9,7 @@ h1 {
 }
 
 p {
+  line-height: 1.3;
   color: #e3e3e2;
   filter: drop-shadow(3px 2px 2px #00000048);
 }
@@ -210,7 +211,7 @@ img {
 #projects,
 #contact-me,
 #top h1 {
-  margin: 0 30px;
+  margin: 30px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -225,6 +226,9 @@ img {
   text-align: center;
 }
 
+#contact-me {
+align-items: center;}
+
 #projects img {
   margin: 0 0 20px;
   max-height: 275px;
@@ -236,7 +240,9 @@ img {
 }
 
 #contact-links {
-  margin: 50px 0 80px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  width: 325px;
   display: flex;
   justify-content: space-between;
   filter: drop-shadow(3px 2px 2px #00000048);
@@ -275,10 +281,6 @@ main {
 @media screen and (min-width: 650px) {
   h1 {
     font-size: 60px;
-  }
-
-  p {
-    font-size: 20px;
   }
 
   h4 {
@@ -331,11 +333,11 @@ main {
   }
 
   #about-me p {
-    margin: 30px 150px;
+    margin: 16px 5rem;
   }
 
   #contact-links {
-    margin: 50px 400px 100px;
+    margin: 50px 15rem 100px;
   }
 
   #fixed-header {
